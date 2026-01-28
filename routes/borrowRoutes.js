@@ -3,6 +3,6 @@ const router = express.Router();
 const borrowCtrl = require('../controllers/borrowController');
 const auth = require('../middleware/authMiddleware');
 
-router.post('/', auth('user'), borrowCtrl.borrowBook); // User mode [cite: 66]
+router.post('/', auth('user'), borrowCtrl.borrowBook); 
 
 module.exports = router;

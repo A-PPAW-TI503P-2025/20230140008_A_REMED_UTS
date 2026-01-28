@@ -5,7 +5,7 @@ const auth = require('../middleware/authMiddleware');
 
 router.get('/', bookCtrl.getAllBooks);
 router.get('/:id', bookCtrl.getBookById);
-router.post('/', auth('admin'), bookCtrl.createBook); // Admin mode [cite: 62]
+router.post('/', auth('admin'), bookCtrl.createBook); 
 router.put('/:id', auth('admin'), bookCtrl.updateBook);
 router.delete('/:id', auth('admin'), bookCtrl.deleteBook);
 
